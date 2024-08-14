@@ -80,8 +80,8 @@ DATABASES = {
         'NAME': 'pokedex',
         'HOST': 'localhost',
         'PORT': '5432',
-        'USER': 'postgres',
-        'PASSWORD': 'pucetec'
+        'USER': 'admin',
+        'PASSWORD': 'admin'
     }
 }
 
@@ -131,7 +131,7 @@ MEDIA_ROOT = BASE_DIR / 'media'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-#configurar de login
-LOGIN_URL = "pokedex:login"
-LOGIN_REDIRECT_URL= '/'
-LOGOUT_REDIRECT_URL= '/'
+# Configuracion de login
+LOGIN_REDIRECT_URL = '/'
+LOGOUT_REDIRECT_URL = '/'
+LOGIN_URL = 'pokedex:login'
